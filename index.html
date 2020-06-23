@@ -1,54 +1,298 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
-
-  <title>API Documentation | Knoetical</title>
-
-  <!-- Flatdoc -->
-  <script src="/js/jquery.min.js"></script>
-  <script src='/js/legacy.js'></script>
-  <script src='/js/flatdoc.js'></script>
-
-  <!-- Flatdoc theme -->
-  <link  href='/css/style.css' rel='stylesheet'>
-  <script src='/js/script.js'></script>
-
-  <!-- Meta -->
-  <meta content="api documentation | Knoetical" property="og:title">
-  <meta content="api documentation | Knoetical" name="description">
-
-  <!-- Initializer -->
-  <script>
-    Flatdoc.run({
-      fetcher: Flatdoc.file('/Readme.md')
-    });
-  </script>
-</head>
-<body role='flatdoc'>
-
-  <div class='header'>
-    <div class='left'>
-      <h1>Knoetical</h1>
-      <ul>
-        <li><a href='https://www.knoetical.com' target='_blank'>Home</a></li>
-        <!-- <li><a href='https://github.com/USER/REPO/issues'>Issues</a></li> -->
-      </ul>
-    </div>
-    <div class='right'>
-      <!-- GitHub buttons: see http://ghbtns.com -->
-      <!-- <iframe src="http://ghbtns.com/github-btn.html?user=USER&amp;repo=REPO&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe> -->
-    </div>
-  </div>
-
-  <div class='content-root'>
-    <div class='menubar'>
-      <div class='menu section' role='flatdoc-menu'></div>
-    </div>
-    <div role='flatdoc-content' class='content'></div>
-  </div>
-
-</body>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags --> 
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>InsilicoTx</title>
+		<link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+		<link rel="stylesheet" href="vendors/owl.carousel/css/owl.carousel.css">
+		<link rel="stylesheet" href="vendors/owl.carousel/css/owl.theme.default.min.css">
+		<link rel="stylesheet" href="vendors/aos/css/aos.css">
+		<link rel="stylesheet" href="vendors/jquery-flipster/css/jquery.flipster.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="shortcut icon" href="images/icon/favicon-16x16.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="images/icon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="images/icon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/icon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="images/icon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/icon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="images/icon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="images/icon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="images/icon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/icon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="images/icon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/icon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="images/icon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/icon/favicon-16x16.png">
+		<link rel="manifest" href="images/icon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="images/icon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+		<div id="mobile-menu-overlay"></div>
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand" href="/">InsilicoTx</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+					<div class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center">
+						InsilicoTx
+						<a href="javascript:;" class="close-menu"><i class="mdi mdi-close"></i></a>
+					</div>
+					<ul class="navbar-nav ml-auto align-items-center">
+						<li class="nav-item active">
+							<a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="/app">Demo</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Features</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#about">How It Works</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" target="_blank" href="/blog">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link btn btn-success" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScxe1nfZ1WvlZ927pqqPfiniGKIVtv7srNDJmPwDPhRD8kYAg/viewform">Join Waitlist</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="page-body-wrapper">
+			<section id="home" class="home">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="main-banner">
+								<div class="d-sm-flex justify-content-between">
+									<div data-aos="zoom-in-up">
+										<div class="banner-title">
+											<h3 class="font-weight-medium">
+												Accelerate Your Drug Discovery Journey 
+											</h3>
+										</div>
+										<p class="mt-3">
+											Streamlined Computer-Aided Drug Design Pipeline.<br />Designed and Perfected with Efficiency in Mind
+										</p>
+										<a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScxe1nfZ1WvlZ927pqqPfiniGKIVtv7srNDJmPwDPhRD8kYAg/viewform" class="btn btn-secondary mt-3">Join Waitlist</a>
+										<a target="_blank" href="https://docs.google.com/forms/d/1c1hc-BVTIBlfdAsJwlZ6aXjbDAiA132cwYw7zCv-V6A" class="btn btn-secondary mt-3">Partner with Us</a>
+									</div>
+									<div class="mt-5 mt-lg-0">
+										<img src="images/group.png" alt="marsmello" class="img-fluid" data-aos="zoom-in-up">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-services" id="services">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h5 class="text-dark">We’re offering</h5>
+							<h3 class="font-weight-medium text-dark mb-5">Drug Discovery as a Service</h3>
+						</div>
+					</div>
+					<div class="row" data-aos="fade-up">
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/integrated-marketing.svg" alt="integrated-marketing" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									Lead Discovery by Virtual Screening
+								</h6>
+								<p>
+									cost-effective identification of hit compunds using computational techniques in conjunction with 10 million compound collection
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box"   data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/design-development.svg" alt="design-development" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									Compound Library Design
+								</h6>
+								<p>
+									build a focused library (100,000s of small molecules) ready for lead optimization from chemical space around a handful of chemical scaffolds identified in hit discovery
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/digital-strategy.svg" alt="digital-strategy" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									Collaboration and Sharing
+								</h6>
+								<p>
+									Your whole team can work and optimize the process with us using our platform, designed with sharing and collaboration in mind
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="row" data-aos="fade-up">
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box  pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/digital-marketing.svg" alt="digital-marketing" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									SAR Analysis
+								</h6>
+								<p>
+									Structure Activity Relationships (SAR) to predict biological activity from molecular structure. Our pipeline puts human in the loop to make the process more effective
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box pb-lg-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/growth-strategy.svg" alt="growth-strategy" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									Lead Optimization & ADME-Tox
+								</h6>
+								<p>
+									monitor and manipulate multiple parameters pertaining to ADME-Tox properties as well as potency and selectivity whilst remaining within a patentable chemical space
+								</p>
+							</div>
+						</div>
+						<div class="col-sm-4 text-center text-lg-left">
+							<div class="services-box pb-0" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+								<img src="images/saving-strategy.svg" alt="saving-strategy" data-aos="zoom-in">
+								<h6 class="text-dark mb-3 mt-4 font-weight-medium">
+									Target Analysis
+								</h6>
+								<p>
+									comprehensive target analysis allows our platform to adopt an optimal hit finding strategy and ultimately to design better, selective compounds
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="our-process" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6" data-aos="fade-up">
+							<h5 class="text-dark">How It Works</h5>
+							<h3 class="font-weight-medium text-dark">Project Onboarding & Pipeline Creation</h3>
+							<h5 class="text-dark mb-3"></h5>
+							<p class="font-weight-medium mb-4">
+							</p>
+							<div class="d-flex justify-content-start mb-3">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">You Provide Target protein structure or a hit compound structure</p>
+							</div>
+							<div class="d-flex justify-content-start mb-3">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">We create a custom pipeline</p>
+							</div>
+							<div class="d-flex justify-content-start mb-3">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">You add team members and we add our experts for collaboration</p>
+							</div>
+							<div class="d-flex justify-content-start mb-3">
+								<img src="images/tick.png" alt="tick" class="mr-3 tick-icon"  >
+								<p class="mb-0">ETA is estimated and project kicks-off</p>
+							</div>
+						</div>
+						<div class="col-sm-6 text-right" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+							<img src="images/idea.png" alt="idea" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</section>			
+			<section>
+			</section>
+		</div>
+		<footer class="footer">
+			<!--
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<address>
+								<p></p>
+								<p class="mb-4"></p>
+								<div class="d-flex align-items-center">
+									<p class="mr-4 mb-0"></p>
+									<a href="mailto:info@gleaner.in" class="footer-link">info@gleaner.in</a>
+								</div>
+							</address>
+							<div class="social-icons">
+								<h6 class="footer-title font-weight-bold">
+									Social Share
+								</h6>
+								<div class="d-flex">
+									<a href="#"><i class="mdi mdi-github-circle"></i></a>
+									<a href="#"><i class="mdi mdi-facebook-box"></i></a>
+									<a href="#"><i class="mdi mdi-twitter"></i></a>
+									<a href="#"><i class="mdi mdi-dribbble"></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<div class="col-sm-4">
+									<h6 class="footer-title">Social Share</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Home</a></li>
+										<li><a href="#" class="footer-link">About</a></li>
+										<li><a href="#" class="footer-link">Services</a></li>
+										<li><a href="#" class="footer-link">Portfolio</a></li>
+										<li><a href="#" class="footer-link">Contact</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<h6 class="footer-title">Product</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Digital Marketing</a></li>
+										<li><a href="#" class="footer-link">Web Development</a></li>
+										<li><a href="#" class="footer-link">App Development</a></li>
+										<li><a href="#" class="footer-link">Design</a></li>
+									</ul>
+								</div>
+								<div class="col-sm-4">
+									<h6 class="footer-title">Company</h6>
+									<ul class="list-footer">
+										<li><a href="#" class="footer-link">Partners</a></li>
+										<li><a href="#" class="footer-link">Investors</a></li>
+										<li><a href="#" class="footer-link">Partners</a></li>
+										<li><a href="#" class="footer-link">FAQ</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="d-flex justify-content-between align-items-center">
+						<div class="d-flex align-items-center">
+							InsilicoTx &nbsp;
+							<p class="mb-0 text-small pt-1">© 2020 <a href="#" class="text-white" target="_blank">InsilicoTx</a>. All rights reserved.</p>
+						</div>
+						<div>
+							<div class="d-flex">
+								<a href="#" class="text-small text-white mx-2 footer-link">Privacy Policy </a>          
+								<a href="#" class="text-small text-white mx-2 footer-link">Disclaimer</a>          
+								<a href="#" class="text-small text-white mx-2 footer-link">Customer Support </a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="vendors/base/vendor.bundle.base.js"></script>
+		<script src="vendors/owl.carousel/js/owl.carousel.js"></script>
+		<script src="vendors/aos/js/aos.js"></script>
+		<script src="vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+		<script src="js/template.js"></script>
+	</body>
 </html>
